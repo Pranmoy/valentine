@@ -87,7 +87,7 @@ body {
 .header_text {
     height: 150px;
     position: absolute;
-    top: 25%;
+    top: 18%;
     left: 50%;
     transform: translate(-50%,-50%);
     display: flex;
