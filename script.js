@@ -32,7 +32,7 @@ function increaseSize() {
 function increaseSizeText () {
     var Button = document.getElementById('yesButton');
     var currentSize = parseInt(window.getComputedStyle(Button, null).getPropertyValue('font-size'));
-    var newSize = currentSize * 1.7;
+    var newSize = currentSize + 10;
     Button.style.fontSize = newSize + 'px';
 
 }
@@ -83,7 +83,7 @@ function changeTextAndShift() {
 
 
     // Shift the "No" button to the right on each click
-    noButtonPosition += 20; // Adjust the shift amount as needed
+    noButtonPosition += 10; // Adjust the shift amount as needed
     // noButton.style.transform = `translateX(${noButtonPosition}px)`;
 }
 
