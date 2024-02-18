@@ -65,32 +65,46 @@
 
 body {
     background-color: aquamarine;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     align-items: center;
+    /* height: 100vh; */
+    margin: none;
 }
 
 .gif_container img {
     height: 150px;
     position: absolute;
-    top: 20%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
 
+.container {
+    text-align: center;
+}
+
 .header_text {
+    height: 150px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
     color: black;
+    font-family: 'Nunito';
 }
+
 
 
 .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 #yesButton{
