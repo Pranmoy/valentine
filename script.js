@@ -2,6 +2,7 @@
 document.getElementById("noButton").addEventListener('click' , function (){ 
     increaseSize ("yesButton")
     increaseSizeText("yesButton")
+    moveToBottom("noButton")
 })
 let yesButtonSize = 100;// Initial size of the yes button
 let noButtonSize = 0;//initial size of the no button
@@ -37,6 +38,12 @@ function increaseSizeText () {
 
 }
 
+function moveToBottom() {
+    var noButton = document.getElementById('noButton');
+    var buttonContainer = noButton.parentNode;
+    buttonContainer.appendChild(noButton); // Move the No button to the bottom
+}
+
 function changeTextAndShift() {
     const noButton = document.getElementById("noButton");
     clickCount++;
@@ -62,11 +69,10 @@ function changeTextAndShift() {
                 break;
              case 5:
                 noButton.textContent = "plessss :[";
-    
                 resizeButton(noButton);
                 break;
              case 6:
-                noButton.textContent = "you have no were to go ;)";
+                noButton.textContent = "you have nowhere to go ;)";
                 resizeButton(noButton);
                 noButton.disabled = true;
                 break;
